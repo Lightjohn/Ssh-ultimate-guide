@@ -35,20 +35,29 @@ Now in your home you should see:
 
 ## Now what ?
 
-To use the keys, connect to the distant machine using
-```
-ssh user@distant-machine
-```
-and:
+*  Method 1 (to understand what happen):
 
-```
-cd .ssh // Create it if it does not exists
-nano authorized_keys
-```
+   To use the keys, connect to the distant machine using
+   
+   ```
+   ssh user@distant-machine
+   ```
+   
+   and:
+   
+   ```
+   cd .ssh // Create it if it does not exists
+   nano authorized_keys
+   ```
+   
+   Then paste the content of id_rsa.pub inside authorized_keys
+   To quit: *Ctrl-x* then *y* then press *Enter*
 
-Then paste the content of id_rsa.pub inside authorized_keys
+*  Method 2 (for the next times):
 
-To quit: *Ctrl-x* then *y* then press *Enter*
+   ```
+   ssh-copy-id -i ~/.ssh/id_rsa.pub user@distant-machine
+   ```
 
 Now you can close the session to the distant machine and try again to connect.
 If you are connected without being asked for a password, everything is good else go on reading.
