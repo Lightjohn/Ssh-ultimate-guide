@@ -10,7 +10,7 @@ guide is to enhance your daily use with SSH.
 
 # SSH keys or passworld-less connection
 
-Before anything we will set some keys, Why ? Because it's **CONVENIENT** and as a 
+Before anything we will set some keys, Why? Because it's **CONVENIENT** and as a 
 bonus, it's secure.
 
 ```
@@ -33,7 +33,7 @@ Now in your home you should see:
 ├── id_rsa.pub
 ```
 
-## Now what ?
+## Now what?
 
 *  Method 1 (to understand what happen):
 
@@ -65,7 +65,7 @@ If you are connected without being asked for a password, everything is good else
 ## It's not working
 
 ssh is very picky and not very talkative on the permissions so do the following 
-steps on every machines ! 
+steps on every machines! 
 
 Do not hesitate to touch the files if they dont exists: `touch ~/.ssh/config ~/.ssh/authorized_keys`
 
@@ -86,7 +86,7 @@ This step can solve many of your problems.
 # The main dish: the conf file
 
 What if I say that **EVERY** options you are using for your daily usage can be 
-saved so that you can reduce your ssh command to nearly nothing ?
+saved so that you can reduce your ssh command to nearly nothing?
 
 ```
 ssh -X -p 2222 MyUser@machine.domain.com
@@ -98,7 +98,7 @@ can become:
 ssh machine
 ``` 
 
-Ready ? Let's modify the ~/.ssh/config file in your local home. For that you 
+Ready? Let's modify the ~/.ssh/config file in your local home. For that you 
 can use every text editor you want.
 
 A SSH config file works like that:
@@ -176,7 +176,7 @@ across the sessions. To add a key `ssh-add ~/.ssh/id_rsa`.
 
 This tool is for you if you are working on an headless machine without the tools 
 you like: you will be able to mount the distant in a local folder and explore the
-distant machine hard drive like if it was a external har drive !
+distant machine hard drive like if it was a external har drive!
 
 First install *sshfs* then create an empty foler:
 
@@ -190,7 +190,7 @@ If you have configured your `.ssh/config` (at this point, I hope) then:
 sshfs server: tmp
 ```
 
-And now in tmp you have your distant home. Wonderful !
+And now in tmp you have your distant home. Wonderful!
 
 To unmount just enter:
 
@@ -200,7 +200,7 @@ fusermount -u tmp
 
 ## rsync
 
-Why is rsync here ? rsync is a backup/synchronisation tool, what matters here is 
+Why is rsync here? rsync is a backup/synchronisation tool, what matters here is 
 it can use ssh to synchronize over the internet your data:
 
 ```
