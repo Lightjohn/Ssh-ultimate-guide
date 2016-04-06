@@ -8,7 +8,7 @@ and sneaky stuff here.
 I will not talk too much of the really first steps to install/use ssh, this 
 guide is to enhance your daily use with SSH.
 
-# SSH keys or passworld-less connection
+# SSH keys or password-less connection
 
 Before anything we will set some keys, Why? Because it's **CONVENIENT** and as a 
 bonus, it's secure.
