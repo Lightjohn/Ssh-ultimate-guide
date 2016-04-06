@@ -50,7 +50,7 @@ Now in your home you should see:
    nano authorized_keys
    ```
    
-   Then paste the content of id_rsa.pub inside authorized_keys
+   Then paste the content of **id\_rsa.pub** inside authorized_keys
    To quit: *Ctrl-x* then *y* then press *Enter*
 
 *  Method 2 (for the next times):
@@ -64,10 +64,10 @@ If you are connected without being asked for a password, everything is good else
 
 ## It's not working
 
-ssh is very picky and not very talkative on the permissions so do the following 
+SSH is very picky and not very talkative on the permissions so do the following 
 steps on every machines! 
 
-Do not hesitate to touch the files if they dont exists: `touch ~/.ssh/config ~/.ssh/authorized_keys`
+Do not hesitate to create the files if they dont exists: `touch ~/.ssh/config ~/.ssh/authorized_keys`
 
 
 ```
