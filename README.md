@@ -59,6 +59,12 @@ Now in your home you should see:
    ssh-copy-id -i ~/.ssh/id_rsa.pub user@distant-machine
    ```
 
+   or if you are on mac:
+
+   ```
+   cat ~/.ssh/id_rsa.pub | ssh user@distant-machine 'cat - >> ~/.ssh/authorized_keys'
+   ```
+
 Now you can close the session to the distant machine and try again to connect.
 If you are connected without being asked for a password, everything is good else go on reading.
 
@@ -176,9 +182,9 @@ across the sessions. To add a key `ssh-add ~/.ssh/id_rsa`.
 
 This tool is for you if you are working on an headless machine without the tools 
 you like: you will be able to mount the distant in a local folder and explore the
-distant machine hard drive like if it was a external har drive!
+distant machine hard drive like if it was a external hard drive!
 
-First install *sshfs* then create an empty foler:
+First install *sshfs* then create an empty folder:
 
 ```
 mkdir tmp
