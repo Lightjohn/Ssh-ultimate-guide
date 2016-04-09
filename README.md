@@ -215,6 +215,26 @@ it can use ssh to synchronize over the internet your data:
 rsync machine:distantFolder/ localFolder/
 ```
 
+## web proxy
+
+You are in an insecure place but want to access internet ? ssh can do it for you:
+
+```
+ssh -D 8888 machine
+```
+
+Will open a SOCKS proxy on localhost.
+
+Now in Chrome/Firefox/what you want, add a proxy (I use FoxyProxy plugin on Firefox/Chrome) with these informations:
+
+```
+Proxy adress: localhost:8888
+Is SOCKS: yes
+SOCKS version: 5
+```
+
+Don't forget to choose this new proxy in FoxyProxy and now all your future connections (except DNS queries) will go trought *machine* in an encrypted way.
+
 # Note
 
 To finish a little note:
