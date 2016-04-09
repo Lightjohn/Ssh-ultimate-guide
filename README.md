@@ -144,6 +144,8 @@ Here some options that are really worth to know:
 you will jump from one machine to another without ever being asked for a password 
 (if the previous steps are done: `~/.ssh/authorized_keys` on every servers)
 
+**NOTE**: Do not activate this option on any server, only on those you trust.
+
 `IdentityFile ~/.ssh/id_rsa`: you can specify for a particular host a specific 
 key. 
 
