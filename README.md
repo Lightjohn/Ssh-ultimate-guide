@@ -237,27 +237,45 @@ Don't forget to choose this new proxy in FoxyProxy and now all your future conne
 
 # Note
 
-To finish a little note:
+* Quickly execute a SSH command:
+	
+	There is a way to just send a command to the server and get the result locally.
+	
+	Instead of:
 
-When you are using scp or rsync you do something like that:
+	```
+	ssh machine
+	command here
+	exit
+	```
 
-```
-scp -r machine:distantFolder/ localFolder/
-```
+	you can simply:
 
-The meaning of **machine:** is that you are pointing to your home.
-
-So 
-
-```
-scp -r machine:distantFolder/ localFolder/
-```
-
-is equivalent to:
-
-```
-scp -r machine:/home/you/distantFolder/ localFolder/
-```
+	```
+	ssh machine "command here"
+	```
 
 
-Hope you will be able to learn something.
+* To finish a little note:
+	
+	When you are using scp or rsync you do something like that:
+	
+	```
+	scp -r machine:distantFolder/ localFolder/
+	```
+	
+	The meaning of **machine:** is that you are pointing to your home.
+	
+	So 
+	
+	```
+	scp -r machine:distantFolder/ localFolder/
+	```
+	
+	is equivalent to:
+	
+	```
+	scp -r machine:/home/you/distantFolder/ localFolder/
+	```
+	
+	Hope you will be able to learn something.
