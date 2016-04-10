@@ -278,4 +278,4 @@ Don't forget to choose this new proxy in FoxyProxy and now all your future conne
 	scp -r machine:/home/you/distantFolder/ localFolder/
 	```
 	
-	Hope you will be able to learn something.
+Hope you will be able to learn something.
