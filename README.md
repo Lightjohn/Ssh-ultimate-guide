@@ -184,7 +184,7 @@ If you have configured your `.ssh/config` (at this point, I hope) then:
 sshfs server: tmp
 ```
 
-And now in tmp you have your temote home. Wonderful!
+And now in tmp you have your remote home. Wonderful!
 
 To unmount just enter:
 
