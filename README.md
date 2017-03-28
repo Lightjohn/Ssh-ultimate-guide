@@ -125,6 +125,11 @@ Host *
 
 Here we specify that every connection will be on **port 22** and the user will be **MyUser**. Not bad.
 
+### Note:
+
+The first config encountered in the *conf* file will be the config used, so put `Host *` at the **end** of your *conf* file
+so that your specific config will be used.
+
 Then let's go back to our example and create a host for this case
 
 ```
