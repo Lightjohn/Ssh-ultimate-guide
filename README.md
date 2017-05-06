@@ -115,7 +115,22 @@ Host machine
    optionName2 valueName2
 ```
 
-First, if you want to apply an option for every connection:
+You can also do something like that:
+
+```
+Host machine1 machine2 machine3 machine4
+   User MyUser
+```
+
+With that you will use the same login for every machine, an easier way to do this is:
+
+```
+Host machine*
+   User MyUser
+```
+**NOTE**: You can use * or ? for everything or only one unknown character
+
+First, if you want to apply an option for every connection but put this option at the **bottom** of the config file, so that it act as a default, if no option was given:
 
 ```
 Host *
@@ -266,7 +281,7 @@ Don't forget to choose this new proxy in FoxyProxy and now all your future conne
 	is equivalent to:
 	
 	```
-	scp -r machine:/home/you/temoteFolder/ localFolder/
+	scp -r machine:/home/you/remoteFolder/ localFolder/
 	```
 	
 Hope you have learned something.
