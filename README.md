@@ -104,7 +104,7 @@ can become:
 ssh machine
 ``` 
 
-Ready? Let's modify the ~/.ssh/config file in your local home. For that you 
+**Ready**? Let's modify the `~/.ssh/config` file in your local home. For that you 
 can use any text editor you want.
 
 An SSH config file works like this:
