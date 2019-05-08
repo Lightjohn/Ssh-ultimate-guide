@@ -46,14 +46,14 @@ Now in your home you should see:
    and:
    
    ```
-   cd .ssh // Create it if it does not exist
+   cd .ssh // Create this folder if it does not exist
    nano authorized_keys
    ```
    
    Then paste the content of **id\_rsa.pub** inside authorized_keys
    To quit: *Ctrl-x* then *y* then press *Enter*
 
-*  Method 2 (for the next time):
+*  Method 2 (for the next times):
 
    ```
    ssh-copy-id -i ~/.ssh/id_rsa.pub user@distant-machine
