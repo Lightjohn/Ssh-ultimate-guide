@@ -262,7 +262,7 @@ Don't forget to choose this new proxy in FoxyProxy and now all your future conne
 	```
 
 
-* To finish a little note:
+* A little note:
 	
 	When you are using scp or rsync you do something like this:
 	
@@ -283,5 +283,13 @@ Don't forget to choose this new proxy in FoxyProxy and now all your future conne
 	```
 	scp -r machine:/home/you/remoteFolder/ localFolder/
 	```
-	
+
+ * You have a ssh session that is frozen (lost connection or put laptop to sleep?)
+
+	To send the message to ssh that you want to quit, you have to send
+	```~ .``` in the terminal
+
+	But you have to make sure that nothing is in the buffer yet so type
+	```ENTER TILDE DOT ENTER``` keys and that should quit the ssh session.
+
 Hope you have learned something.
